@@ -1,6 +1,21 @@
 {
-  "buildCommand": "npm install -g hugo-extended && cp -R exampleSite/* . && hugo --themesDir ../",
-  "outputDirectory": "public",
+  "version": 2,
+  "builds": [
+    {
+      "src": "layouts/**/*",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": ".",
+        "command": "hugo"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
   "regions": ["hkg1"],
   "name": "webstack-hugo"
 }
