@@ -1,5 +1,6 @@
 {
-  "buildCommand": "cp -R exampleSite/* . && hugo",
-  "outputDirectory": "public",
+  "buildCommand": "hugo",
+  "outputDirectory": "./public",
+  "framework": "hugo",
   "regions": ["hkg1"]
 }
