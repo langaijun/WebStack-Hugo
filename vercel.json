@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cp -R exampleSite/* . && hugo --minify",
+  "buildCommand": "bash build.sh",
   "outputDirectory": "./public",
   "framework": "hugo",
   "regions": ["hkg1"]
