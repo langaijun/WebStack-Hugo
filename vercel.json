@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cp -R exampleSite/* . && hugo --themesDir ../ --minify",
+  "outputDirectory": "public",
+  "installCommand": "go install -tags extended github.com/gohugoio/hugo/v2/cmd/hugo@latest",
+  "framework": "hugo",
+  "regions": ["hkg1"]
+}
