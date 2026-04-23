@@ -1,7 +1,6 @@
 {
-  "buildCommand": "cp -R exampleSite/* . && hugo --themesDir ../ --minify",
+  "buildCommand": "npm install -g hugo-extended && cp -R exampleSite/* . && hugo --themesDir ../",
   "outputDirectory": "public",
-  "framework": "hugo",
   "regions": ["hkg1"],
   "name": "webstack-hugo"
 }
