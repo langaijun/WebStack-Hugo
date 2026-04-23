@@ -1,7 +1,7 @@
 baseURL               = "https://webstack-hugo.vercel.app/"
 languageCode          = "zh-CN"
 title                 = "WebStack-Hugo 网址导航"
-theme                 = "WebStack-Hugo"
+# theme                 = "WebStack-Hugo"  # 主题文件在根目录的 layouts 和 static 中
 preserveTaxonomyNames = true
 disablePathToLower    = true
 hasCJKLanguage        = true
