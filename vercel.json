@@ -1,19 +1,18 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "layouts/**/*",
+      "src": "exampleSite/**/*",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": ".",
-        "command": "hugo"
+        "distDir": "public"
       }
     }
   ],
-  "routes": [
+  "functions": {},
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "regions": ["hkg1"],
