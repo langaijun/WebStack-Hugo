@@ -1,20 +1,17 @@
 {
+  "version": 2,
+  "name": "webstack-hugo",
   "builds": [
     {
-      "src": "exampleSite/**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public"
-      }
+      "src": "package.json",
+      "use": "@vercel/static-build"
     }
   ],
-  "functions": {},
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ],
-  "regions": ["hkg1"],
-  "name": "webstack-hugo"
+  "regions": ["hkg1"]
 }
