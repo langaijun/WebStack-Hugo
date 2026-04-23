@@ -1,17 +1,5 @@
 {
-  "version": 2,
-  "name": "webstack-hugo",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
+  "buildCommand": "cp -R exampleSite/* . && hugo",
+  "outputDirectory": "public",
   "regions": ["hkg1"]
 }
