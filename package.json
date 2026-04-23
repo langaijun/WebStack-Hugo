@@ -1,7 +1,0 @@
-{
-  "name": "webstack-hugo",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "cp -R exampleSite/* . && hugo"
-  }
-}
