@@ -3,5 +3,6 @@
   "outputDirectory": "public",
   "installCommand": "go install -tags extended github.com/gohugoio/hugo/v2/cmd/hugo@latest",
   "framework": "hugo",
-  "regions": ["hkg1"]
+  "regions": ["hkg1"],
+  "name": "webstack-hugo"
 }
